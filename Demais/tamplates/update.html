@@ -1,0 +1,37 @@
+<html  lang =" en " > 
+    <head > 
+        <título > atualização </título > 
+        <link  rel =" folha de estilo " href =" ../static/style.css " > 
+    </cabeça > 
+    <body  bgcolor =" #e6ffee " > 
+        <div  classe =" um " > 
+            <div  class =" dois " > 
+                <h1 > Barra lateral </h1 > 
+                <ul > 
+                    <li > <a  href =" {{url_for('index')}} " > Índice </a > </li > 
+                    <li > <a  href =" {{url_for('view')}} " > Ver </a > </li > 
+                    <li  class =" active " > <a  href =" {{url_for('update')}} " > Atualizar </a > </li > 
+                    <li > <a  href =" {{url_for('logout')}} " > Sair </a > </li > 
+                </ul >  
+            </div > 
+            <div  class =" conteúdo " alinhar =" centro " > 
+                <div  class =" barra superior " > 
+                    <h2 > Bemvindo!! Você está na página de atualizações!! </h2 >                         
+                </div > </br > </br > 
+                <div  class =" barra de conteúdo " > 
+                  <h1 > Preencha os campos para atualizar </h1 > </br > 
+              <form  action =" {{ url_for('update') }} " method =" post " autocomplete =" off " > 
+                    <div  class =" msg " > {{ msg }} </div > 
+                    <input  type =" text " name =" username " placeholder =" Informe o nome do usuário " class =" textbox " id =" username " required > </br > </br > 
+                    <input  type =" password " name =" password " placeholder =" Digite uma senha " class =" textbox " id =" password " obrigatório > </br > </br > 
+                    <input  type =" email " name =" email " placeholder =" Informe seu e-mail " class =" textbox " id =" email " obrigatório > </br > </br > 
+                    <input  type =" tel " name =" email " placeholder =" Entre com seu celular " class =" textbox " id =" celular " required > </br > </br > 
+                    <input  type =" text " name =" city " placeholder =" Informe sua cidade " class =" textbox " id =" city " required > </br > </br > 
+                    <input  type =" text " name =" state " placeholder =" Informe seu estado " class =" textbox " id =" state " required > </br > </br > 
+                    <input  type =" submit " class =" btn " value =" Update " > 
+              </forma >                      
+                </div >   
+                    </div > 
+        </div > 
+    </corpo > 
+</html > 

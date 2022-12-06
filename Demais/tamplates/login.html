@@ -1,0 +1,23 @@
+<html > 
+    <head> 
+        <meta  charset =" UTF-8 " > 
+        <título > Entrar </título > 
+        <link  rel =" folha de estilo " href =" ../static/style.css " >        
+    </head > 
+    <body > 
+        <div  class =" logincontent " align =" center " > 
+            <div  class =" login top " > 
+                <h1 > Entrar </h1 > 
+            </div > </br > </br > </br > </br > 
+            <div  class =" loginbottom " > 
+              <form  action =" {{ url_for('login')}} " method =" post " autocomplete =" off " > 
+            <div  class =" msg " >  </div > 
+            <input  type =" text " name =" username " placeholder =" Informe seu usuário " class =" textbox " id =" username " required > </br > </br > 
+            <input  type =" password " name =" password " placeholder =" Digite sua senha " class =" textbox " id =" password " obrigatório > </br > </br > </br > 
+            <input  type =" submit " class =" btn " value =" Login " > 
+              </formulário > </br > </br > 
+              <p  class =" worddark " > Primeiro acesso? <a  class =" worddark " href =" {{ url_for('register')}} " > Registre-se aqui </a > </p > 
+            </div > 
+        </div > 
+    </body > 
+</html > 

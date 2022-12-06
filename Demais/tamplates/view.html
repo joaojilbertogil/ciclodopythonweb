@@ -1,0 +1,57 @@
+<html  lang =" en " > 
+    <head > 
+        <title > Visualização </title > 
+        <link  rel =" folha de estilo " href =" ../static/style.css " > 
+        </head > 
+    <body  bgcolor =" #e6ffee " > 
+        <div  classe =" um " > 
+            <div  class =" dois " > 
+                <h1 > Barra lateral </h1 > 
+                <ul > 
+                    <li > <a  href =" {{url_for('index')}} " > Índice </a > </li > 
+                    <li  class =" active " > <a  href =" {{url_for('view')}} " > Display </a > </li > 
+                    <li > <a  href =" {{url_for('update')}} " > Atualizar </a > </li > 
+                    <li > <a  href =" {{url_for('login')}} " > Entrar </a > </li > 
+                </ul >  
+            </div > 
+            <div  class =" conteúdo " alinhar =" centro " > 
+                <div  class =" barra superior " > 
+                    <h2 > Bem-vindo!! Você está na página de visualizações!! </h2 >                         
+                </div >   </br> _ 
+                <div  class =" barra de conteúdo " > 
+                    <h1 > Seus registros </h1 >     </br > 
+                     {% bloquear conteúdo %}
+                        <div  class =" borda " > 
+                            <table  class =" worddark " > </br > </br > </br > </br > 
+                                <tr > 
+                                    <td > Usuário: </td > 
+                                    <td > {{ conta['nome de usuário'] }} </td > 
+                                </tr > 
+                                <tr > 
+                                    <td > Senha: </td > 
+                                    <td > {{ conta['senha'] }} </td > 
+                                </tr > 
+                                <tr > 
+                                    <td > E-mail: </td > 
+                                    <td > {{ conta['email'] }} </td > 
+                                </tr > 
+                                <tr > 
+                                    <td > Celular: </td > 
+                                    <td > {{ conta['celular'] }} </td > 
+                                </tr > 
+                                <tr > 
+                                    <td > Cidade: </td > 
+                                    <td > {{ conta['cidade'] }} </td > 
+                                    </tr > 
+                                <tr > 
+                                    <td > Estado: </td > 
+                                    <td > {{ conta['estado'] }} </td > 
+                                </tr >                                                     
+                            </tabela > 
+                        </div > 
+                    {% bloco final %}                                            
+                </div > 
+                    </div > 
+        </div > 
+    </body > 
+</html > 
